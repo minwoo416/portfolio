@@ -1,0 +1,12 @@
+@keyframes introNum {
+    0% { transform:translateY(50px); opacity:0;}
+    100% {transform:translateY(0); opacity:1;}
+}
+@keyFrames introH1 {
+    0% { transform:translateX(-50px); opacity:0;}
+    100% {transform:translateX(0); opacity:1;}
+}
+@keyFrames introBg {
+    0% { transform:scale(130%);}
+    100% { transform:scale(100%);}
+}

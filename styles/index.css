@@ -1,0 +1,51 @@
+header {background:#393E46; display:flex; justify-content:space-between; padding:20px;}
+header nav {display:flex; gap:30px;}
+header nav a {color:#fff;}
+header p {color:#fff;}
+#wrap {height:100vh;}
+#wrap .swiper-wrapper {}
+#wrap .swiper-wrapper .intro {
+    background:url(../images/intro_bg.jpg);
+    animation:introBg 5s;
+    text-align:center;
+    display:flex; flex-flow:column nowrap; align-items:center; justify-content:center;
+}
+#wrap .swiper-wrapper .intro p {color:#fff;}
+#wrap .swiper-wrapper .intro p:nth-child(1) {font-size:1.875rem; animation:introNum 1s linear;}
+#wrap .swiper-wrapper .intro p:nth-child(2) {font-size:2.5rem; font-weight:700; opacity:0;  animation:introNum 1s linear 1s both;}
+#wrap .swiper-wrapper .intro h1 {
+    font-size:4.375rem; font-weight:700;
+    color:#fff; letter-spacing: 21px;
+    margin-top:30px; opacity:0;
+    animation:introH1 1s linear 1s both;
+}
+#wrap .swiper-wrapper {}
+#wrap .swiper-wrapper .container {
+    display:flex; justify-content:space-between; align-items:center;
+    width:1620px; margin:140.5px auto; background:Red;
+}
+#wrap .swiper-wrapper .container .photo_info {text-align:center;}
+#wrap .swiper-wrapper .container .photo_info h2 {}
+#wrap .swiper-wrapper .container .photo_info .my_img {/* 이미지가 들어갈 공간 */ width:300px; height:300px; background:blue; margin:30px 0;}
+#wrap .swiper-wrapper .container .photo_info .my_info {text-align:left;}
+#wrap .swiper-wrapper .container .photo_info .my_info p {}
+#wrap .swiper-wrapper .container .my_career {}
+#wrap .swiper-wrapper .container .my_career .education {}
+#wrap .swiper-wrapper .container .my_career .education ul {}
+#wrap .swiper-wrapper .container .my_career .education ul li {}
+#wrap .swiper-wrapper .container .my_career .education ul li span {}
+#wrap .swiper-wrapper .container .my_career .license {}
+#wrap .swiper-wrapper .container .my_career .license ul {}
+#wrap .swiper-wrapper .container .my_career .license ul li {}
+#wrap .swiper-wrapper .container .my_career .license ul li span {}
+#wrap .swiper-wrapper .container .my_career .experience {}
+#wrap .swiper-wrapper .container .my_career .experience ul {}
+#wrap .swiper-wrapper .container .my_career .experience ul li {}
+#wrap .swiper-wrapper .container .my_career .experience ul li span {}
+#wrap .swiper-wrapper .container .my_skill {}
+#wrap .swiper-wrapper .container .my_skill .skill {}
+#wrap .swiper-wrapper .container .my_skill .skill p {}
+#wrap .swiper-wrapper .container .my_skill .skill p img {}
+#wrap .swiper-wrapper .container .my_skill .skill .application {}
+#wrap .swiper-wrapper .container .my_skill .skill .application span {}
+#wrap .swiper-wrapper .container .my_skill .skill > span {}
