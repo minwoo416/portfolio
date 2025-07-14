@@ -7,22 +7,24 @@ header p {color:#fff;}
 #wrap .swiper-wrapper .intro {
     background:url(../images/intro_bg.jpg);
     animation:introBg 5s;
-    text-align:center;
-    display:flex; flex-flow:column nowrap; align-items:center; justify-content:center;
 }
-#wrap .swiper-wrapper .intro p {color:#fff;}
-#wrap .swiper-wrapper .intro p:nth-child(1) {font-size:1.875rem; animation:introNum 1s linear;}
-#wrap .swiper-wrapper .intro p:nth-child(2) {font-size:2.5rem; font-weight:700; opacity:0;  animation:introNum 1s linear 1s both;}
-#wrap .swiper-wrapper .intro h1 {
-    font-size:4.375rem; font-weight:700;
-    color:#fff; letter-spacing: 21px;
-    margin-top:30px; opacity:0;
+#wrap .swiper-wrapper .intro .intro_wrap {
+    background:Red; width:1620px; height:624px;
+    margin:200px auto 0;
+    display:flex; justify-content:space-between;
+}
+#wrap .swiper-wrapper .intro .intro_wrap p {color:#fff; font-size:3.125rem;}
+#wrap .swiper-wrapper .intro .intro_wrap p span {color:#fff; font-size:3.125rem; font-weight:700;} 
+#wrap .swiper-wrapper .intro .intro_wrap h1 {
+    font-size:9.375rem; font-weight:700;
+    color:#fff; opacity:0;
     animation:introH1 1s linear 1s both;
+    margin-top:330px;
 }
 #wrap .swiper-wrapper {}
 #wrap .swiper-wrapper .container {
     display:flex; justify-content:space-between; align-items:center;
-    width:1620px; margin:140.5px auto; background:Red;
+    width:1620px; background:Red; margin:0 auto; height:800px;
 }
 #wrap .swiper-wrapper .container .photo_info {text-align:center;}
 #wrap .swiper-wrapper .container .photo_info h2 {}
