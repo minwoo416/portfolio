@@ -19,22 +19,22 @@
 <body>
     <header>
         <nav>
-            <a href="#">Intro</a>
-            <a href="#">Profile</a>
-            <a href="#">wed</a>
-            <a href="#">Outtro</a>
+            <a href="#intro_container">Intro</a>
+            <a href="#profile_container">Profile</a>
+            <a href="#project_web_container">wed</a>
+            <a href="#project_design_container">Outtro</a>
         </nav>
         <p>010-9965-6741</p>
     </header>
     <div class="swiper" id="wrap">
         <div class="swiper-wrapper">
-            <div class="swiper-slide intro">
-                <div class="intro_wrap">
+            <div class="swiper-slide intro" id="intro_container">
+                <div class="intro_wrap container">
                     <p>2025<br><span>web Designer</span></p>
                     <h1>min woo's<br>PORTFOLIO</h1>
                 </div>
             </div>
-            <div class="swiper-slide profile">
+            <div class="swiper-slide profile" id="profile_container">
                 <div class="container">
                     <div class="photo_info">
                         <h2>About me</h2>
@@ -237,7 +237,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide project_web">
+            <div class="swiper-slide project_web" id="project_web_container">
                 <div class="container">
                     <div class="swiper" id="project_swiper">
                         <!--필수-->
@@ -279,13 +279,13 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide project_design">
+            <div class="swiper-slide project_design" id="project_design_container">
                 <div class="container">
                     <div id="project_design_swiper">
                         <!--필수-->
                         <h2>Project - Design</h2>
                         <div class="design_container">
-                            <dlv class="design_left">
+                            <div class="design_left">
                                 <div class="swiper design_poster">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide slide1"><img src="./images/design01.jpg" alt=""></div>
@@ -299,12 +299,14 @@
                                         <div class="swiper-slide slide2"><img src="./images/design02.jpg" alt=""></div>
                                     </div>
                                 </div>
-                            </dlv>
-                            <dlv class="swiper design_right">
+                            </div>
+                            <div class="swiper design_right">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide slide1"><img src="./images/design_long01.jpg" alt=""></div>
+                                    <div class="swiper-slide slide1"><img src="./images/design_long01.jpg" alt=""></div>
+                                    <div class="swiper-slide slide1"><img src="./images/design_long01.jpg" alt=""></div>
                                 </div>
-                            </dlv>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -26,3 +26,13 @@ const project = new Swiper("#project_swiper", {
         prevEl: "#project_swiper .swiper-button-prev",
     },
 });
+/* const poster = new Swiper('#project_design_swiper .design_long_banner', {
+    
+}) */
+
+const detail = new Swiper('#project_design_swiper .design_right', {
+    slidePerView : 1,
+})
+const head = document.querySelectorAll('header nav a');
+const list =document.querySelectorAll('.swiper-slide container');
+console.log(head, list)
