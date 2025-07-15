@@ -1,19 +1,27 @@
-header {background:#393E46; display:flex; justify-content:space-between; padding:20px;}
+/* ----------------------------------------------------헤더 */
+header {
+    background:#393E46; 
+    display:flex; justify-content:space-between; 
+    padding:15px; 
+    position:absolute; top:0; left:0; z-index:900;
+    width:100vw;
+}
 header nav {display:flex; gap:30px;}
 header nav a {color:#fff;}
 header p {color:#fff;}
+
 #wrap {height:100vh;}
 #wrap .swiper-wrapper {}
+/* ----------------------------------------------------1행 인트로 */
 #wrap .swiper-wrapper .intro {
     background:url(../images/intro_bg.jpg);
     animation:introBg 5s;
 }
 #wrap .swiper-wrapper .intro .intro_wrap {
-    background:Red; width:1620px; height:624px;
-    margin:200px auto 0;
     display:flex; justify-content:space-between;
+    width:1620px; margin:0 auto;
 }
-#wrap .swiper-wrapper .intro .intro_wrap p {color:#fff; font-size:3.125rem;}
+#wrap .swiper-wrapper .intro .intro_wrap p {color:#fff; opacity:0; font-size:3.125rem;animation:introNum 1s linear 0.5s both;}
 #wrap .swiper-wrapper .intro .intro_wrap p span {color:#fff; font-size:3.125rem; font-weight:700;} 
 #wrap .swiper-wrapper .intro .intro_wrap h1 {
     font-size:9.375rem; font-weight:700;
@@ -21,33 +29,118 @@ header p {color:#fff;}
     animation:introH1 1s linear 1s both;
     margin-top:330px;
 }
-#wrap .swiper-wrapper {}
-#wrap .swiper-wrapper .container {
+#wrap .swiper-wrapper .swiper-slide {display:flex; align-items:center;}
+/* ----------------------------------------------------2행 프로필 */
+#wrap .swiper-wrapper .profile .container {
     display:flex; justify-content:space-between; align-items:center;
-    width:1620px; background:Red; margin:0 auto; height:800px;
+    width:1620px; margin:0 auto 0; height:549px;
 }
-#wrap .swiper-wrapper .container .photo_info {text-align:center;}
-#wrap .swiper-wrapper .container .photo_info h2 {}
-#wrap .swiper-wrapper .container .photo_info .my_img {/* 이미지가 들어갈 공간 */ width:300px; height:300px; background:blue; margin:30px 0;}
-#wrap .swiper-wrapper .container .photo_info .my_info {text-align:left;}
-#wrap .swiper-wrapper .container .photo_info .my_info p {}
-#wrap .swiper-wrapper .container .my_career {}
-#wrap .swiper-wrapper .container .my_career .education {}
-#wrap .swiper-wrapper .container .my_career .education ul {}
-#wrap .swiper-wrapper .container .my_career .education ul li {}
-#wrap .swiper-wrapper .container .my_career .education ul li span {}
-#wrap .swiper-wrapper .container .my_career .license {}
-#wrap .swiper-wrapper .container .my_career .license ul {}
-#wrap .swiper-wrapper .container .my_career .license ul li {}
-#wrap .swiper-wrapper .container .my_career .license ul li span {}
-#wrap .swiper-wrapper .container .my_career .experience {}
-#wrap .swiper-wrapper .container .my_career .experience ul {}
-#wrap .swiper-wrapper .container .my_career .experience ul li {}
-#wrap .swiper-wrapper .container .my_career .experience ul li span {}
-#wrap .swiper-wrapper .container .my_skill {}
-#wrap .swiper-wrapper .container .my_skill .skill {}
-#wrap .swiper-wrapper .container .my_skill .skill p {}
-#wrap .swiper-wrapper .container .my_skill .skill p img {}
-#wrap .swiper-wrapper .container .my_skill .skill .application {}
-#wrap .swiper-wrapper .container .my_skill .skill .application span {}
-#wrap .swiper-wrapper .container .my_skill .skill > span {}
+#wrap .swiper-wrapper .profile .container .photo_info {text-align:center; height:100%;}
+#wrap .swiper-wrapper .profile .container .photo_info h2 {
+    font-family: "Baloo Bhai 2", sans-serif; font-size:2.5rem; font-weight:700;
+    margin-bottom:30px;
+}
+#wrap .swiper-wrapper .profile .container .photo_info .my_img {/* 이미지가 들어갈 공간 */ width:300px; height:300px; background:blue; margin:30px 0;}
+#wrap .swiper-wrapper .profile .container .photo_info .my_info {display:flex; flex-flow:column nowrap; gap:10px;}
+#wrap .swiper-wrapper .profile .container .photo_info .my_info p {}
+#wrap .swiper-wrapper .profile .container .my_container {
+    display:flex; flex-flow:column nowrap; 
+    width:1200px; height:100%;
+    gap:50px;
+}
+#wrap .swiper-wrapper .profile .container .photo_info .my_info .name {margin-bottom:20px;}
+#wrap .swiper-wrapper .profile .container .my_container h2 {/* 공통 모든 제목 */
+    font-family: "Baloo Bhai 2", sans-serif; font-size:2.5rem; font-weight:700;
+    margin-bottom:20px;
+}
+#wrap .swiper-wrapper .profile .container .my_container .my_career {
+    display:flex; justify-content:space-between; border-bottom:1px solid #d9d9d9;
+    padding-bottom:50px;
+}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .list li {/* 공통 영역 */
+    margin-bottom:20px;
+}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .list li .date {
+    margin-right:20px; width:80px;
+    color:#949494;
+}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .list li:last-of-type {margin-bottom:0;}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .education {}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .education ul {}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .education ul li {}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .education ul li span {}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .license {}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .license ul {}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .license ul li {}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .license ul li span {}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .experience {}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .experience ul {}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .experience ul li {}
+#wrap .swiper-wrapper .profile .container .my_container .my_career .experience ul li span {}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill {}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill h2 {margin-bottom:20px;}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill h2 span {font-size:1rem; color:#949494; margin-left:30px;}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill > p {/* 후버시 나오는 설명 */
+    display:block;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 2s ease, transform 1s ease;
+}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill > p.active {/* js토글 */
+    opacity: 1;
+    transform: translateX(0);background:#eee; padding:30px; margin-top:20px;
+    display:flex; flex-flow:column nowrap; gap:10px;
+    border-radius:30px;
+}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container {display:flex; gap:50px;}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill {}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill p {}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill p img {}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill .application {display:none;}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill .application > span {}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill .application .score_wrap {display:flex;}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill .application .score_wrap .score {}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill .application .score_wrap .score img {display:block;}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill > span {}
+/* ----------------------------------------------------3행 프로젝트-웹 */
+#wrap .swiper-wrapper .project_web {background:#000;}
+#wrap .swiper-wrapper .project_web .container {width:1620px; margin:0 auto;}
+#wrap .swiper-wrapper .project_web .container #project_swiper {
+    
+}
+#wrap .swiper-wrapper .project_web .container #project_swiper * {color:#fff;}
+#wrap .swiper-wrapper .project_web .container #project_swiper h2 {font-size:3.75rem; font-weight:600; margin-bottom:10px;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-prev {}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper {}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide {display:flex; gap:30px; justify-content:center; align-items:center;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content {}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content p {}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .project_name {
+    font-size:1.875rem; font-weight:600; margin-bottom:50px;
+}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .project_date {}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .project_program {margin:20px 0;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .project_page {}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .page_btn_wrap {
+    margin-top:20px; display:flex; flex-flow:column nowrap; gap:20px;
+}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .page_btn_wrap button {
+    width:max-content; padding:5px 20px; background:#fff; color:#000;
+    border-radius:20px;
+}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .page_btn_wrap button:hover {filter:brightness(70%);}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .right_content {}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .right_content img {display:block; border-radius:20px; transition:all 1s;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .right_content img:hover {
+    transform:scale(105%);
+}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-next {}
+/* ----------------------------------------------------4행 프로젝트- 디자인 */
+#wrap .swiper-wrapper .project_design {}
+#wrap .swiper-wrapper .project_design .container {width:1620px; margin:0 auto; background:red;}
+#wrap .swiper-wrapper .project_design .container #project_design_swiper_{}
+#wrap .swiper-wrapper .project_design .container #project_design_swiper h2 {}
+#wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container {}
+#wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container .design_left {}
+#wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container .design_left .design_poster {}
+#wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container .design_left .design_poster .swiper-wrapper {}/* 선택자 계속 만들기 */
