@@ -11,6 +11,8 @@
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/animation.css">
@@ -21,8 +23,8 @@
         <nav>
             <a href="#intro_container">Intro</a>
             <a href="#profile_container">Profile</a>
-            <a href="#project_web_container">wed</a>
-            <a href="#project_design_container">Outtro</a>
+            <a href="#project_web_container">Web</a>
+            <a href="#project_design_container">Design</a>
         </nav>
         <p>010-9965-6741</p>
     </header>
@@ -30,8 +32,8 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide intro" id="intro_container">
                 <div class="intro_wrap container">
-                    <p>2025<br><span>web Designer</span></p>
-                    <h1>min woo's<br>PORTFOLIO</h1>
+                    <p>2025<span>web Designer</span></p>
+                    <h1 id="typing"></h1>
                 </div>
             </div>
             <div class="swiper-slide profile" id="profile_container">
@@ -251,12 +253,12 @@
                                     <p class="project_program">사용 프로그램 : Photoshop, figma, html,<br>css, js,swiper</p>
                                     <p class="project_page">제작페이지 : index, 상품상세, 상품더보기</p>
                                     <div class="page_btn_wrap">
-                                        <button type="button">원본 사이트</button>
-                                        <button type="button">프로토타입 결과</button>
+                                        <a href="https://www.29cm.co.kr/" target="_blank">원본 사이트</a>
+                                        <a href="https://minwoo416.github.io/project_29cm/" target="_blank">프로토타입 결과</a>
                                     </div>
                                 </div>
                                 <div class="right_content">
-                                    <img src="./images/29cm.jpg" alt="">
+                                    <img src="./images/29cm_mok.jpg" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide slide2">
@@ -266,12 +268,12 @@
                                     <p class="project_program">사용 프로그램 : Photoshop, figma, html,<br>css, js,swiper</p>
                                     <p class="project_page">제작페이지 : index, 상품상세</p>
                                     <div class="page_btn_wrap">
-                                        <button type="button">원본 사이트</button>
-                                        <button type="button">프로토타입 결과</button>
+                                        <a href="https://www.aritaum.com/main.do" target="_blank">원본 사이트</a>
+                                        <a href="https://minwoo416.github.io/project_aritaum/" target="_blank">프로토타입 결과</a>
                                     </div>
                                 </div>
                                 <div class="right_content">
-                                    <img src="./images/aritaum.jpg" alt="">
+                                    <img src="./images/aritaum_mok.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -290,13 +292,16 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide slide1"><img src="./images/design01.jpg" alt=""></div>
                                         <div class="swiper-slide slide2"><img src="./images/design02.jpg" alt=""></div>
-                                        <div class="swiper-slide slide3"><img src="./images/design01.jpg" alt=""></div>
+                                        <div class="swiper-slide slide3"><img src="./images/none.jpg" alt=""></div>
+                                        <div class="swiper-slide slide1"><img src="./images/none.jpg" alt=""></div>
                                     </div>
                                 </div>
                                 <div class="swiper design_long_banner">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide slide1"><img src="./images/design01.jpg" alt=""></div>
-                                        <div class="swiper-slide slide2"><img src="./images/design02.jpg" alt=""></div>
+                                        <div class="swiper-slide slide1"><img src="./images/none.jpg" alt=""></div>
+                                        <div class="swiper-slide slide2"><img src="./images/none.jpg" alt=""></div>
+                                        <div class="swiper-slide slide2"><img src="./images/none.jpg" alt=""></div>
+                                        <div class="swiper-slide slide2"><img src="./images/none.jpg" alt=""></div>
                                     </div>
                                 </div>
                             </div>
@@ -311,7 +316,24 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-slide outtro" id="outtro_container">
+                <div class="container">
+                    <div class="outtro_left">
+                        <img src="./images/kakao_qr.jpg" alt="">
+                    </div>
+                    <div class="outtro_right">
+                        <p>지금까지 포트폴리오를 봐주셔서 감사합니다.</p>
+                        <p>더욱 발전하는 웹디자이너가 되겠습니다.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="popup_bg"><!-- 팝업 -->
+        <div class="popup">
+            <img src="./images/design01.jpg" alt="">
+        </div>
+    </div>
+
 </body>
 </html>

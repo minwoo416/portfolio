@@ -3,10 +3,18 @@
     100% {transform:translateX(0); opacity:1;}
 }
 @keyFrames introH1 {
-    0% { transform:translateX(100px); opacity:0;}
-    100% {transform:translateX(0); opacity:1;}
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 @keyFrames introBg {
-    0% { transform:scale(130%);}
-    100% { transform:scale(100%);}
+    0% { }
+    100% { }
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+@keyframes shadow {
+    0%, 100% { text-shadow: 0px 0px 30px #fff;}
+    50% { text-shadow:1px 1px 1px #000;}
 }
