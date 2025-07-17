@@ -21,6 +21,10 @@ console.log(skill, application);
 
 /* 스와이퍼 */
 const project = new Swiper("#project_swiper", {
+    pagination: {
+        el: "#project_swiper .swiper-pagination",
+        type: "progressbar",
+    },
     navigation: {
         nextEl: "#project_swiper .swiper-button-next",
         prevEl: "#project_swiper .swiper-button-prev",

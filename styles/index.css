@@ -59,8 +59,10 @@ header p {color:#fff;}
     margin-bottom:30px;
 }
 #wrap .swiper-wrapper .profile .container .photo_info .my_img {/* 이미지가 들어갈 공간 */ width:300px; height:300px; background:blue; margin:30px 0;}
-#wrap .swiper-wrapper .profile .container .photo_info .my_info {display:flex; flex-flow:column nowrap; gap:10px;}
+#wrap .swiper-wrapper .profile .container .photo_info .my_info {display:flex; flex-flow:column nowrap; gap:10px; text-align:left; padding:30px; border:4px double #000;}
 #wrap .swiper-wrapper .profile .container .photo_info .my_info p {}
+#wrap .swiper-wrapper .profile .container .photo_info .my_info p:nth-child(1) span {margin-right:20px;}
+#wrap .swiper-wrapper .profile .container .photo_info .my_info p span {font-size:1.125rem; font-weight:700;}
 #wrap .swiper-wrapper .profile .container .my_container {
     display:flex; flex-flow:column nowrap; 
     width:1200px; height:100%;
@@ -116,6 +118,7 @@ header p {color:#fff;}
 #wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill {}
 #wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill p {}
 #wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill p img {}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill p img:hover {transform:rotate(30deg)}
 #wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill .application {display:none;}
 #wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill .application > span {}
 #wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill .application .score_wrap {display:flex;}
@@ -126,40 +129,67 @@ header p {color:#fff;}
 #wrap .swiper-wrapper .project_web {background:#000; display:flex; align-items:center;}
 #wrap .swiper-wrapper .project_web .container {width:1620px; margin:0 auto;}
 #wrap .swiper-wrapper .project_web .container #project_swiper {
-    
+    position:relative;
 }
 #wrap .swiper-wrapper .project_web .container #project_swiper * {color:#fff;}
 #wrap .swiper-wrapper .project_web .container #project_swiper h2 {font-size:3.75rem; font-weight:600; margin-bottom:10px;}
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-prev {}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-prev {left:30px;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-prev::after {display:none;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-prev img {width:50px; }
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-next {right:30px;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-next img {width:50px;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-next::after {display:none;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-pagination {
+    top:80px; width:calc(100% - 100px); left:50%; transform:translateX(-50%);
+    height:5px;
+    /* border-top:px solid #fff; */
+    border-radius: 999px; /* 양쪽 둥글게 */
+    overflow: hidden; /* fill이 넘치지 않게 */
+}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-pagination-progressbar-fill {
+    background:#000;
+}
 #wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper {}
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide {display:flex; gap:30px; justify-content:center; align-items:center;}
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content {}
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content p {}
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .project_name {
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap {
+    display:flex; gap:50px; justify-content:center; align-items:center;
+    margin:0 auto;
+    background:#fff; height:700px; width:1620px; border-radius:50px;
+}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content {
+    background:#000; padding:50px; border-radius:50px; transition:all 0.5s;
+}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content:hover {transform:scale(103%);}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content p {font-weight:700;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content p span {
+    font-size:0.875rem;
+    color:#aaa;
+}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content .project_name {
     font-size:1.875rem; font-weight:600; margin-bottom:50px;
 }
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .project_date {}
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .project_program {margin:20px 0;}
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .project_page {}
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .page_btn_wrap {
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content .project_date {}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content .project_program {margin:20px 0;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content .project_page {}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content .page_btn_wrap {
     margin-top:20px; display:flex; flex-flow:column nowrap; gap:20px;
 }
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .page_btn_wrap a {
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content .page_btn_wrap a {
     width:max-content; padding:5px 20px; background:#fff; color:#000;
     border-radius:20px;
 }
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .left_content .page_btn_wrap a:hover {filter:brightness(70%);}
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .right_content {
-    width:1000px; height:624px;
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content .page_btn_wrap a:hover {filter:brightness(70%);}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .right_content {
+    width:900px; height:624px;
 }
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .right_content img {
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .right_content img {
     display:block; border-radius:20px; transition:all 1s;
     width:100%; height:100%;
 }
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .right_content img:hover {
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .right_content img:hover {
     transform:scale(105%);
 }
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-next {}
+
 /* ----------------------------------------------------4행 프로젝트- 디자인 */
 #wrap .swiper-wrapper .project_design {}
 #wrap .swiper-wrapper .project_design .container {
@@ -203,15 +233,23 @@ header p {color:#fff;}
     width:100%; display:block;
 }
 /* ----------------------------------------------------5행 아웃트로 */
-#wrap .swiper-wrapper .outtro {display:flex; align-items:center; background:#000;}
+#wrap .swiper-wrapper .outtro {display:flex; align-items:center; background:#000; position:relative;}
 #wrap .swiper-wrapper .outtro .container {
     width:1620px; margin:0 auto;
     display:flex; align-items:center; justify-content:center; gap:50px;
+    
 }
 #wrap .swiper-wrapper .outtro .container .outtro_left {}
 #wrap .swiper-wrapper .outtro .container .outtro_left img {display:block;}
 #wrap .swiper-wrapper .outtro .container .outtro_right {display:flex; flex-flow:column nowrap; gap:20px;}
 #wrap .swiper-wrapper .outtro .container .outtro_right p {color:#fff;}
+#wrap .swiper-wrapper .outtro .container .connect {
+    background:red; position:absolute;
+    width:100%; bottom:0;
+}
+#wrap .swiper-wrapper .outtro .container .connect .connect_wrap {padding:30px; background:#fff; display:flex; flex-flow:column nowrap; gap:30px;}
+#wrap .swiper-wrapper .outtro .container .connect .connect_wrap p {font-size:1.125rem;}
+#wrap .swiper-wrapper .outtro .container .connect .connect_wrap p span {font-weight:700;}
 .popup_bg {width:100vw; height:100vh; background:rgba(0,0,0,0.3); 
     position:fixed; top:0; left:0;
     z-index:800;
