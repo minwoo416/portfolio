@@ -26,7 +26,7 @@ header p {color:#fff;}
 #wrap .swiper-wrapper .intro .intro_wrap {
     width:1620px; margin:0 auto; text-align:center;
 }
-#wrap .swiper-wrapper .intro .intro_wrap p {
+#wrap .swiper-wrapper .intro .intro_wrap .sub_title {
     color:#fff; opacity:1; 
     /* font-size:3.125rem;animation:introNum 1s linear 1s both; */
     display:flex; align-items:center; gap:50px; justify-content:center;
@@ -35,7 +35,7 @@ header p {color:#fff;}
     animation:shadow 2s infinite;
 }
 #wrap .swiper-wrapper .intro .intro_wrap p span {color:#fff; font-size:3.125rem; font-weight:700;} 
-#wrap .swiper-wrapper .intro .intro_wrap h1 {
+#wrap .swiper-wrapper .intro .intro_wrap #typing {
     font-size:9.375rem; font-weight:700;
     color:#fff; opacity:1;
     /* animation:introH1 1s linear 1.5s both; */
@@ -58,7 +58,8 @@ header p {color:#fff;}
     font-family: "Baloo Bhai 2", sans-serif; font-size:2.5rem; font-weight:700;
     margin-bottom:30px;
 }
-#wrap .swiper-wrapper .profile .container .photo_info .my_img {/* 이미지가 들어갈 공간 */ width:300px; height:300px; background:blue; margin:30px 0;}
+#wrap .swiper-wrapper .profile .container .photo_info .my_img {/* 이미지가 들어갈 공간 */ width:200px; height:300px; margin:30px 0; margin:0 auto;}
+#wrap .swiper-wrapper .profile .container .photo_info .my_img img {width:100%;  display:block;}
 #wrap .swiper-wrapper .profile .container .photo_info .my_info {display:flex; flex-flow:column nowrap; gap:10px; text-align:left; padding:30px; border:4px double #000;}
 #wrap .swiper-wrapper .profile .container .photo_info .my_info p {}
 #wrap .swiper-wrapper .profile .container .photo_info .my_info p:nth-child(1) span {margin-right:20px;}
@@ -124,7 +125,7 @@ header p {color:#fff;}
 #wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill .application .score_wrap {display:flex;}
 #wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill .application .score_wrap .score {}
 #wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill .application .score_wrap .score img {display:block;}
-#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill > span {}
+#wrap .swiper-wrapper .profile .container .my_container .my_skill .skill_container .skill > p {}
 /* ----------------------------------------------------3행 프로젝트-웹 */
 #wrap .swiper-wrapper .project_web {background:#000; display:flex; align-items:center;}
 #wrap .swiper-wrapper .project_web .container {width:1620px; margin:0 auto;}
