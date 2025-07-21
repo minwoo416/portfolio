@@ -171,6 +171,7 @@ header p {color:#fff;}
 }
 #wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content .project_date {}
 #wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content .project_program {margin:20px 0;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content .project_responsive {margin-top:20px;}
 #wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content .project_page {}
 #wrap .swiper-wrapper .project_web .container #project_swiper .swiper-wrapper .swiper-slide .web_wrap .left_content .page_btn_wrap {
     margin-top:20px; display:flex; flex-flow:column nowrap; gap:20px;
