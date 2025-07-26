@@ -6,6 +6,9 @@ const wrap = new Swiper('#wrap',{
 const skill = document.querySelectorAll('.skill_container .skill');
 const application = document.querySelectorAll('.skill .application');
 const hover = document.querySelector('.my_skill > p')
+/* 기본적으로 첫 번째 글자 나오게하기 */
+hover.innerHTML = application[0].innerHTML;
+hover.classList.add('active');
 skill.forEach((obj)=>{
     const img = obj.querySelector('img');
     const text = obj.querySelector('.application');
@@ -16,6 +19,7 @@ skill.forEach((obj)=>{
     img.addEventListener('mouseleave',()=>{
         hover.classList.remove('active')
     })
+    
 })
 console.log(skill, application);
 
