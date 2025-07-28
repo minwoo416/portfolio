@@ -19,7 +19,6 @@ skill.forEach((obj)=>{
     img.addEventListener('mouseleave',()=>{
         hover.classList.remove('active')
     })
-    
 })
 console.log(skill, application);
 
@@ -51,6 +50,7 @@ const long = new Swiper('#project_design_swiper .design_long_banner',{
 const detail = new Swiper('#project_design_swiper .design_right', {
     slidePerView :1,
     autoplay:{delay:2000},
+    loop:true,
 })
 
 const design = document.querySelectorAll('#project_design_swiper .swiper-slide');

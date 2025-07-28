@@ -197,6 +197,9 @@ header p {color:#fff;}
 #wrap .swiper-wrapper .project_design .container {
     width:1620px; margin:120px auto 0; height:700px; overflow:hidden;
 }
+#wrap .swiper-wrapper .project_design .container * img:hover {
+    filter:brightness(80%);
+}
 #wrap .swiper-wrapper .project_design .container #project_design_swiper {width:100%; height:100%;}
 #wrap .swiper-wrapper .project_design .container #project_design_swiper h2 {font-size:3.75rem; font-weight:600; margin-bottom:30px;}
 #wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container {
@@ -215,7 +218,7 @@ header p {color:#fff;}
     display:block; width:100%; height:300px;
 }
 #wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container .design_left .design_long_banner {
-    width:830px; margin-top:30px;
+    width:900px; margin-top:30px;
 }
 #wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container .design_left .design_long_banner .swiper-wrapper {
     /* display:flex; gap:30px; */
@@ -224,7 +227,7 @@ header p {color:#fff;}
     width:400px; height:200px;
 }
 #wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container .design_left .design_long_banner .swiper-wrapper .swiper-slide img {
-    display:block; width:100%; height:100%;
+    display:block; width:100%;
 }
 #wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container .design_right {}
 #wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container .design_right .swiper-wrapper {}
@@ -258,7 +261,7 @@ header p {color:#fff;}
     display:none;
 }
 .popup_bg .popup {
-    width:700px; margin:100px auto 0;
+    width:900px; margin:100px auto 0;
     height:80vh; overflow:auto;
 }
 .popup_bg .popup img {width:100%;}
