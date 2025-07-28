@@ -212,10 +212,10 @@ header p {color:#fff;}
     width:max-content;
 }
 #wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container .design_left .design_poster .swiper-wrapper .swiper-slide {
-    width:300px;
+    width:300px;  height:300px;
 }
 #wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container .design_left .design_poster .swiper-wrapper .swiper-slide img {
-    display:block; width:100%; height:300px;
+    display:block; width:100%;
 }
 #wrap .swiper-wrapper .project_design .container #project_design_swiper .design_container .design_left .design_long_banner {
     width:900px; margin-top:30px;
