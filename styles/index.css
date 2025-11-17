@@ -134,12 +134,10 @@ header p {color:#fff;}
 }
 #wrap .swiper-wrapper .project_web .container #project_swiper * {color:#fff;}
 #wrap .swiper-wrapper .project_web .container #project_swiper h2 {font-size:3.75rem; font-weight:600; margin-bottom:10px;}
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-prev {left:30px;}
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-prev::after {display:none;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-prev {left:30px; top:50%;}
 #wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-prev img {width:50px; }
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-next {right:30px;}
+#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-next {left:auto; right:0px; top:50%;}
 #wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-next img {width:50px;}
-#wrap .swiper-wrapper .project_web .container #project_swiper .swiper-button-next::after {display:none;}
 #wrap .swiper-wrapper .project_web .container #project_swiper .swiper-pagination {
     top:80px; width:calc(100% - 100px); left:50%; transform:translateX(-50%);
     height:5px;
